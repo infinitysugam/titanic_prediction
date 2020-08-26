@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Hello!</h1>
+	<form action="/result/" method="POST">
+		<fieldset class="content-section">
+		{% csrf_token %}
+		<label for="pclass">Pclass:</label>
+		<input type="number" id="pclass" name="pclass"><br>
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age"><br>
+		<label for="sibsp">SibSp:</label>
+		<input type="number" id="sibsp" name="sibsp"><br>
+		<label for="parch">Parch:</label>
+		<input type="number" id="parch" name="parch"><br>
+
+		<label for="fare">Fare:</label>
+		<input type="number" id="fare" name="fare" step="any"><br>
+
+		<label for="sex">Sex:</label>
+		<input type="number" id="sex" name="sex"><br>
+
+		<label for='q'>Q:</label>
+		<input type="number"   id="q"  name="q"><br>
+
+		<label for="s">S:</label>
+		<input type="number" id="s" name="s"><br>
+
+		<input type="submit" value="submit">
+	</fieldset>
+	</form>
+
+</body>
+</html>
